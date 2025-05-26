@@ -35,4 +35,4 @@ def predict_hiv_status():
         return jsonify({'error': str(e)}), 500
 
 if __name__ == "__main__":
-    api.run(port=8000, debug=True)
+    api.run(host='0.0.0.0', debug=True)
